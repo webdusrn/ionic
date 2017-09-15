@@ -1,6 +1,44 @@
 .sg-header {
   height: 60px;
+  background-color: $black !important;
 }
 .has-header {
   top: 60px;
+}
+.bar-stable {
+  .button.button-icon {
+    max-height: 50px;
+  }
+}
+.sg-nav-btn {
+  margin-left: 10px !important;
+  &.activated {
+    opacity: .7 !important;
+  }
+  &::before {
+    color: $gold;
+  }
+}
+
+.sg-index {
+  .title.title-center.header-item {
+    height: 60px;
+    background: url(/img/header/logo.png) center no-repeat;
+    background-size: 78px 40px;
+  }
+}
+
+.sg-index-header-button {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  border: 0;
+  width: 45px;
+  height: 50px;
+  z-index: 11;
+  background: url(/img/header/sign_up.png) center no-repeat;
+  background-size: 36.75px 35.25px;
+  &.activated {
+    opacity: .7 !important;
+  }
 }

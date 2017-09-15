@@ -1,5 +1,7 @@
 angular.module('main.controller', [])
     .controller('MainCtrl', function ($scope, $ionicModal, $timeout) {
+        var vm = $scope.vm = {};
+
         $scope.loginData = {};
 
         $ionicModal.fromTemplateUrl('views/modals/login.html', {
